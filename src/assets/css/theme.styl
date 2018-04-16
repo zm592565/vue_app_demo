@@ -1,0 +1,81 @@
+@import "var.styl"
+/*风格*/
+
+/*默认下划线颜色*/
+$borderColor=$grey100
+
+/*默认字体颜色*/
+
+/*-------字色--------*/
+/*主标题*/
+$title_color=#2c3e50
+
+/*副标题*/
+$titleVice_color=#858585
+
+/*标题下的标注 比如时间 用户名等等*/
+$titleTag_color=#b4b4b4
+
+/*内容字色*/
+$content_color=#404040;
+
+/*白色*/
+$white_color=$white
+
+
+/*----------背景色----------*/
+$white_full_bgcolor=$fullWhite;
+$white_transparent_bgcolor=$transparent
+
+
+
+/*字号*/
+$text-small-s=10px
+$text-small=12px
+$text-middle=14px
+$text-middle-x=15px
+$text-large=16px
+$text-large-x=18px
+
+
+
+
+
+/*字体*/
+font_px($size)
+  font-size $size
+
+
+/*主标题*/
+.pageCommonTitle
+  color $titleColor
+  @media screen and (max-width:321px)
+    font_px(14px)
+  @media screen and (min-width:321px) and (max-width:400px)
+    font_px(14px)
+  @media screen and (min-width:400px) and (max-width:600px)
+    font_px(14px)
+
+
+
+
+//@media screen and (max-width:321px)
+//  html font_px(12px)
+//
+//@media screen and (min-width:321px) and (max-width:400px)
+//  html font_px(14px)
+//
+//@media screen and (min-width:400px) and (max-width:600px)
+//  html font_px(14px);
+
+//@media screen and (min-width:600px)
+//  html font_px(16px)
+//  body
+//    display block
+//    width 750px
+//    margin 0 auto
+
+
+
+
+

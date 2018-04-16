@@ -1,0 +1,126 @@
+@import "var.styl";
+@import "theme.styl"
+/*公共样式*/
+#app
+    height 100%;
+    background transparent;
+    overflow hidden;
+.home
+  height 100%
+  position relative
+.content_box
+  position absolute
+  bottom 56px
+  left 0px
+  right 0px
+  top 0px
+  overflow-y auto
+
+.bottom-menu
+  position absolute
+  bottom 0px
+  left 0px
+  right 0px
+
+
+/*index*/
+.indexTitle{
+  line-height 24px
+  font-size $text-middle-x
+  color $title_color
+  text-align left
+  padding 8px 10px
+}
+.box_default
+  background $white_full_bgcolor
+.menuType
+  background $white_full_bgcolor
+  padding 0px 10px 10px 10px
+  clear both
+  flexlevel()
+  li
+    font-size $text-middle
+    color $white_color
+    flex1()
+    height 1.28rem
+    margin-right 10px
+    border-radius 5px
+    line-height 1.28rem
+    &:last-child
+      margin-right 0px
+    &:nth-child(1)
+      bg-image('../../../static/img/icon_oddsearch')
+      background-size cover
+    &:nth-child(2)
+      bg-image('../../../static/img/icon_netsearch')
+      background-size cover
+    &:nth-child(3)
+      bg-image('../../../static/img/icon_mybag')
+      background-size cover
+.indexMenuBox
+  width 100%
+  background $white_full_bgcolor
+  flex_wrap()
+  padding 0 10px
+  padding-bottom 10px
+  li
+    display block
+    width 25%
+    height 60px
+    margin-top 10px
+    i
+      display block
+      margin 0 auto
+      min-height 36px
+      background-repeat no-repeat
+      background-position center
+    p
+      line-height 24px
+      font-size $text-small
+    i.icon_IndexMenu_order
+      bg-image('../../../static/img/icon_myodd')
+      background-size auto 80%
+    i.icon_IndexMenu_service
+      bg-image('../../../static/img/icon_service')
+      background-size auto 80%
+    i.icon_IndexMenu_advice
+      bg-image('../../../static/img/icon_suggeste')
+      background-size auto 80%
+    i.icon_IndexMenu_focus
+      bg-image('../../../static/img/icon_attention')
+      background-size auto 80%
+    i.icon_IndexMenu_stop
+      bg-image('../../../static/img/icon_forbidden')
+      background-size auto 80%
+    i.icon_IndexMenu_ques
+      bg-image('../../../static/img/icon_problem')
+      background-size auto 80%
+    i.icon_IndexMenu_point
+      bg-image('../../../static/img/icon_subscription')
+      background-size auto 80%
+    i.icon_IndexMenu_attention
+      bg-image('../../../static/img/icon_notice')
+      background-size auto 80%
+
+/*swiper样式重置*/
+.swiper-pagination-bullet-active{
+  background $white_full_bgcolor!important
+}
+
+
+/*进场离场效果*/
+  .slide-enter-active,.slide-leave-active{
+    transition: all 0.3s
+  }
+  .slide-enter, .slide-leave-to{
+    transform: translate3d(100%, 0, 0)
+  }
+
+
+
+
+
+
+
+
+
